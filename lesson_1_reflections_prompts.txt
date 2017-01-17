@@ -1,0 +1,60 @@
+Reflection
+How did viewing a diff between two versions help you spot de bug?
+
+Spot = the particular place where someone or something is
+
+Prepare the everiment
+echo 'alias npp="C:/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"' >> ~/.bashrc
+
+
+Why should i?
+- This really helps!
+- you'll use this content for vc praticte!
+
+Commit = Like a snapshot of files. Versions of files that are compared with others version with diff command
+
+git init = Inicializa ou cria um repository git
+git log = Show all commits in repository
+git log --stat = Show relatorio of quais files have changes in cada commit
+git config --global color.ui auto = To get colored diff output
+gid diff id1 id2 = compara commit
+git checkout = reverter arquivo temporarriamente para o modo de como estava um commit. Restaurar versao anterior.
+git clone url - the url of the repository to copy. Copy a repository.
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    If you have a old version of file you can viewer the diference between the old that working and de new file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    The history show you how you think about the project and how you torn the project better.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The process manually are more dificil and you can esquecer. But automatically process criam big and unlogicall commit.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    I dont know! I think about the result, not the how is done.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    If you have a mistake is simple for mitigate the error with commit versions
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+	
+Buscando o Bug.
+git log para visualizar os commits. Mais recentes de cima pra baixo
+git diff para visualizar a diferença de um arquivo com bug e outro mais recente sem o bug.
