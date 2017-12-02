@@ -1,0 +1,12 @@
+git remote # Verifica os remotes
+
+git remote add study_code https://github.com/ricamos/study_code.git
+
+git remote -v
+"""
+Output
+study_code      git@github.com:ricamos/study_code.git (fetch)
+study_code      git@github.com:ricamos/study_code.git (push)
+"""
+
+git push study_code master

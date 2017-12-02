@@ -1,0 +1,25 @@
+Como alterar a cor de plano de fundo
+Se você preferir outra cor além do preto para o plano de fundo do Git Bash, poderá alterá-la no menu \"Defaults\", na guia \"Colors\". Se gostar da cor padrão do plano de fundo, não precisará fazer nenhuma alteração.
+
+Download dos arquivos necessários
+*Salve git-completion.bash.txt no diretório raiz com o nome git-completion.bash.
+
+	Salve git-prompt.sh no diretório raiz com o nome git-prompt.sh.
+	Baixe o bash_profile_course da seção Downloadables.
+	Se você já tiver um arquivo no diretório raiz denominado .bash_profile, copie o conteúdo do bash_profile_course e cole-o na parte inferior do .bash_profile. Caso contrário, mova o bash_profile_course para o diretório raiz e renomeie-o para .bash_profile. (Se tiver curiosidade de saber mais sobre como os prompts bash funcionam, consulte esta página.)
+
+Como configurar o Git
+Execute os comandos de configuração do Git a seguir. O primeiro precisará ser modificado se você estiver usando outro editor de texto que não seja o Sublime, ou se o Sublime estiver instalado em outro local. Consulte esta página para obter o comando correto para outros dois editores de texto populares. Para qualquer outro editor, você precisará inserir o comando usado para iniciar o editor em questão no Git Bash.
+
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+Verifique se consegue iniciar o editor a partir do Git Bash
+Se usar o Sublime, você poderá fazer isso adicionando a seguinte linha ao .bash_profile:
+
+alias np=alias np="C:/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+
+Reinicie o Git Bash
+Você precisará fechar e reabrir o Git Bash para que todas as suas alterações sejam aplicadas.
+

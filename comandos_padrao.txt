@@ -1,0 +1,28 @@
+git add # Adiciona arquivos ao repositorio
+git commit
+git status # Status do repositorio
+git log # Informações dos commits
+git diff id1 id2 # Compara arquivos no working area com staging area
+git diff --stage # Compara arquivos no staging area com repository
+git reset --hard # descarta alterações feitas em working area
+
+git diff # working directory - staging area
+git diff --stage # staging area - commit1(repository)
+git diff commit1 commit2 
+
+
+#Passos basicos
+## Iniciar repositorio - working directory
+git init
+ls -a # Verificar arquivos
+git log # Informações sobre o repositório
+git status # Informações sobre commit
+git add * #Adiciona todos arquivos e diretórios ao commit
+git commit
+
+## Criar repositorio remoto - Remote
+git remote # Verifica os remotes
+git remote add study_code https://github.com/ricamos/study_code.git
+git remote -v
+git push study_code master
+

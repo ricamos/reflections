@@ -1,0 +1,28 @@
+Quiz: Como Iniciar Um Repositório
+Repositórios e diretórios Git
+Cada repositório Git está associado a um diretório específico - aquele em que você executou git init. Somente arquivos desse diretório (e subdiretórios dentro desse diretório) estarão nesse diretório e você pode ter repositórios diferentes em diretórios distintos.
+
+Observação: com frequência é o caso em que um repositório Git em algum diretório só conterá, ou rastreará, alguns dos arquivos nesse diretório, em vez de todos eles. Você verá como isso funciona mais adiante nesta lição.
+
+# Padrão
+echo "# Python_Stude" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ricamos/Python_Stude.git
+git push -u origin master
+
+# Como foi feito
+git init
+ls -a # Verificar arquivos
+git log # Informações sobre o repositório
+git status # Informações sobre commit
+git add * #Adiciona todos arquivos e diretórios ao commit
+git commit
+
+
+https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+Remove untracked files from the working tree
+To remove directories, run git clean -f -d or git clean -fd
+To remove ignored files, run git clean -f -X or git clean -fX
+To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
